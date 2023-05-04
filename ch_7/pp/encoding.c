@@ -4,14 +4,16 @@
  */
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void)
 {
         char u_input;
 
-
         do {
                 scanf("%c", &u_input);
+
+                u_input = toupper(u_input);
 
                 if (u_input >= 'A' && u_input <= 'C') {
                         printf("2");
@@ -38,4 +40,3 @@ int main(void)
         printf("\n");
         return 0;
 }
-
